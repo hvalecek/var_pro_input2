@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="displayBill">
+    </p>
+    <p id="displayTax">
+    </p>
+</body>
+
+<script>
+    var billCost = prompt("enter the bill : ");
+    billCost = parseInt(billCost);
+
+    let tax = billCost * .07;
+    let totalTax = tax + billCost;
+    let tip = totalTax * .15;
+    let totalBill = billCost + totalTax;
+    
+    //let displayTax = document.querySelector("#displayTax");
+    let displayBill = document.querySelector("#displayBill");
+    //displayTax.innerText = "your bill plus tax : $" + totalTax;
+    displayBill.innerText = "your total bill is : $" + totalBill;
+
+
+
+</script>
+
+</html>
